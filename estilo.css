@@ -1,0 +1,102 @@
+body{
+    background-image: url(IMG03.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vh;
+}
+
+header{
+    text-shadow: 1px 1px 10px rgb(253, 0, 0) ;
+    word-spacing: 10px;
+    border-radius: 2px;
+    color: rgb(197, 197, 197);
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:capitalize
+}
+
+header:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.20s;
+}
+
+/*------ FORMATAÇÃO DO CONTAINER -----*/
+ .bar{
+    background-color: rgba(123, 129, 129, 0.4);
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    transition: 1s;
+ }
+
+ .bar:hover{
+    background-color: rgb(255, 255, 255);
+ }
+
+ .navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+ }
+
+.container{
+    height: 560px;
+    width: 900px;
+    overflow:hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}  
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: .3s;
+
+}
+
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*----TRANSIÇÃO DAS IMAGENS*/
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+      margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333334%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50.0000000001%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666668%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333335%;
+}
